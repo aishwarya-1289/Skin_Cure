@@ -1,0 +1,42 @@
+{
+    "name": "SkinCure to help you with early disease diagnosis",
+    "short_name": "SkinCure",
+    "theme_color": "white",
+    "background_color": "white",
+    "icons": [
+        {
+          "src": "images/48.png",
+          "type": "image/png",
+          "sizes": "48x48"
+        },
+        {
+          "src": "images/96.png",
+          "type": "image/png",
+          "sizes": "96x96"
+        },
+        {
+          "src": "images/144.png",
+          "type": "image/png",
+          "sizes": "144x144"
+        },
+        {
+          "src": "images/192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "images/256.png",
+          "type": "image/png",
+          "sizes": "256x256"
+        },
+        {
+          "src": "images/512.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+    ],
+    "id":"skin_disease",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+}

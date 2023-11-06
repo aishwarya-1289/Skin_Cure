@@ -1,0 +1,220 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SkinCure</title>
+    <link rel="manifest" href="/static/manifest.json" />
+    <link
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+      rel="stylesheet"
+    />
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <link
+      href="{{ url_for('static', filename='css/test.css') }}"
+      rel="stylesheet"
+    />
+    <script
+      src="{{ url_for('static', filename='js/newjs.js') }}"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fs-5" style="background-color: faead4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><a href=".navbar" ><img id="logo" src="/static/skin_icon.png" style="width: 50px; height: 50px;" title='skin_disease'></img></a></a>   
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a style="color: rgb(158, 17, 17); font-family: serif;" class="nav-link active" aria-current="page" href="#">SkinCure</a>
+              </li>
+              <li style="margin-left: 850px;" class="nav-item">
+                <a style="color: rgb(158, 17, 17); font-family: serif;" class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: rgb(158, 17, 17); font-family: serif;" class="nav-link active" href="#">Contact</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+    <div class="main container">
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col-12 col-md-6 text-center my-5 shadow-lg" style="border-radius: 25px; background-color: rgb(239, 239, 237);">
+        {% block content %} {% endblock %}
+      </div>
+    </div>
+    </div>
+
+  <footer>
+    <!-- Grid container -->
+    <div
+      class="text-center text-lg-start text-white p-4 pb-0"
+      style="background-color: faead4"
+    >
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6
+              style="
+                text-decoration: none;
+                color: rgb(158, 17, 17);
+                font-family: serif;
+              "
+              class="text-uppercase mb-4 font-weight-bold"
+            >
+              Skin Disease Detection
+            </h6>
+            <p
+              style="
+                text-decoration: none;
+                color: rgb(158, 17, 17);
+                font-family: serif;
+              "
+            >
+              Skincure is a application designed to assist users in the
+              detection and identification of varied skin diseases.Detect and
+              diagnose your skin diseases with ease.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6
+              style="
+                text-decoration: none;
+                color: rgb(158, 17, 17);
+                font-family: serif;
+              "
+              class="text-uppercase mb-4 font-weight-bold"
+            >
+              Skin Diseases
+            </h6>
+            <p>
+              <a
+                href="#BCC"
+                style="
+                  text-decoration: none;
+                  color: rgb(158, 17, 17);
+                  font-family: serif;
+                "
+                id="l1"
+                >Basal Cell Carcinoma - BCC</a
+              >
+            </p>
+            <p>
+              <a
+                href="#BKL"
+                style="
+                  text-decoration: none;
+                  color: rgb(158, 17, 17);
+                  font-family: serif;
+                "
+                id="l1"
+                >Benign Keratosis like Lesions - BKL</a
+              >
+            </p>
+            <p>
+              <a
+                href="#Eczema"
+                style="
+                  text-decoration: none;
+                  color: rgb(158, 17, 17);
+                  font-family: serif;
+                "
+                id="l1"
+                >Eczema</a
+              >
+            </p>
+            <p>
+              <a
+                href="#Melanoma"
+                style="
+                  text-decoration: none;
+                  color: rgb(158, 17, 17);
+                  font-family: serif;
+                "
+                id="l1"
+                >Melanoma</a
+              >
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6
+              style="
+                text-decoration: none;
+                color: rgb(158, 17, 17);
+                font-family: serif;
+              "
+              class="text-uppercase mb-4 font-weight-bold"
+            >
+              Contact
+            </h6>
+            <p
+              style="
+                text-decoration: none;
+                color: rgb(158, 17, 17);
+                font-family: serif;
+              "
+            >
+              <i class="fas fa-envelope mr-2"></i>aishwaryanb2000@gmail.com
+            </p>
+            <p
+              style="
+                text-decoration: none;
+                color: rgb(158, 17, 17);
+                font-family: serif;
+              "
+            >
+              <i class="fas fa-phone mr-2"></i>9999988888
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3" />
+
+      <section
+        style="
+          text-decoration: none;
+          color: rgb(158, 17, 17);
+          font-family: serif;
+        "
+        class="text-center pb-5"
+      >
+        © 2023 Copyright<a
+          class="text-white"
+          href="https://mdbootstrap.com/"
+        ></a>
+      </section>
+    </div>
+    <!-- Grid container -->
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/static/service-worker.js');
+    }
+  </script>
+</body>
+</html>

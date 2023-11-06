@@ -1,0 +1,62 @@
+{% extends "import.html" %} {% block content %}
+
+<center>
+  <form id="upload-file" method="post" enctype="multipart/form-data">
+    <label
+      for="imageUpload"
+      class="btn px-5"
+      style="
+        background-color: faead4;
+        color: rgb(158, 17, 17);
+        font-family: serif;
+      "
+      id="upload"
+      >Take a picture </label
+    ><br />
+    <input
+      type="file"
+      name="file"
+      class="btn"
+      id="imageUpload"
+      accept=".png, .jpg, .jpeg"
+      style="display: none"
+    />
+  </form>
+  <br />
+
+  <div class="image-section" style="display: none">
+    <img
+      id="imagePreview"
+      class="img-responsive"
+      src="#"
+      style="width: 300px; height: 300px"
+    /><br /><br />
+    <div></div>
+  </div>
+  <button
+    style="
+      color: faead4;
+      background-color: rgb(158, 17, 17);
+      font-family: serif;
+    "
+    type="button"
+    class="btn"
+    id="btn-predict"
+  >
+    Submit
+  </button>
+  <div class="loader" style="display: none"></div>
+
+  <h3
+    style="text-decoration: none; color: rgb(158, 17, 17); font-family: serif"
+    id="result"
+  >
+    <span> </span>
+  </h3>
+  <!-- <h2
+    style="text-decoration: none; color: rgb(158, 17, 17); font-family: serif"
+    id="prob"
+  ></h2> -->
+</center>
+<br /><br />
+{% endblock %}
